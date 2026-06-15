@@ -349,7 +349,8 @@ nav.scrolled {
 }
 .marquee-track {
   display: inline-flex;
-  animation: marquee 22s linear infinite;
+  animation: marquee 48s linear infinite;
+  will-change: transform;
 }
 .marquee-track:hover { animation-play-state: paused; }
 .marquee-item {
