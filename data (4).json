@@ -1,0 +1,112 @@
+{
+  "restaurant": {
+    "name": "Napoli Slice 2.0",
+    "tagline": "Echte neapolitanische Pizza — direkt am Münchner Hauptbahnhof",
+    "description": "Napoli Slice bringt neapolitanische Pizza direkt ans Herz Münchens. Luftiger Teig, hochwertige Zutaten und klassische Rezepte treffen auf eine lockere, urbane Atmosphäre.",
+    "owner": "Adriana Lo Schiavo",
+    "address": {
+      "street": "Schützenstraße 10",
+      "city": "80335 München",
+      "area": "am Hauptbahnhof, neben dem 25hours Hotel The Royal Bavarian"
+    },
+    "phone": null,
+    "email": null,
+    "instagram": "napoli_slice",
+    "instagramUrl": "https://www.instagram.com/napoli_slice/",
+    "rating": 4.7,
+    "reviewCount": 222,
+    "openedHQ": "5. Dezember 2024",
+    "hours": {
+      "montag": "11:00 – 23:00",
+      "dienstag": "11:00 – 23:00",
+      "mittwoch": "11:00 – 23:00",
+      "donnerstag": "11:00 – 23:00",
+      "freitag": "11:00 – 23:30",
+      "samstag": "11:00 – 23:30",
+      "sonntag": "11:00 – 23:00",
+      "lieferung": "täglich bis 03:00 Uhr"
+    },
+    "menu": {
+      "categories": [
+        {
+          "name": "LE CLASSICHE",
+          "desc": "Die Klassiker — bewährte Qualität",
+          "items": [
+            { "name": "Margherita", "desc": "Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Basilikum, Olivenöl", "price_slice": 2, "price_30": 9, "price_45": 14, "badge": "Bestseller" },
+            { "name": "Diavola", "desc": "Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Salame Napoli pikant, Basilikum, Olivenöl", "price_slice": 3.5, "price_30": 12, "price_45": 17 },
+            { "name": "Prosciutto e Funghi", "desc": "Pomodoro San Marzano, Mozzarella Fior di Latte DOP, premium Kochschinken, Champignons, Basilikum, Olivenöl", "price_slice": 3.5, "price_30": 12, "price_45": 17 },
+            { "name": "BBQ Manzo", "desc": "Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Rindersalami, BBQ-Soße, Röstzwiebeln, Basilikum", "price_slice": 3.5, "price_30": 13, "price_45": 18 }
+          ]
+        },
+        {
+          "name": "LE BIANCHE",
+          "desc": "Weiße Pizzen ohne Tomatensauce",
+          "items": [
+            { "name": "Quattro Formaggi", "desc": "Mozzarella Fior di Latte DOP, Gorgonzola piccante, Ricotta, Parmigiano Reggiano, Olivenöl, Basilikum", "price_slice": 4, "price_30": 13, "price_45": 19 },
+            { "name": "Salsiccia e Friarielli", "desc": "Mozzarella Fior di Latte DOP, Salsiccia Toscana vom Schwein, Friarielli, Olivenöl", "price_slice": 4, "price_30": 13, "price_45": 19 },
+            { "name": "Spicy Love", "desc": "Sehr scharf — Mozzarella Fior di Latte DOP, scharfer Salame Napoli, Spicy Love, Basilikum, Olivenöl", "price_slice": 4, "price_30": 13, "price_45": 19, "badge": "🌶 Scharf" }
+          ]
+        },
+        {
+          "name": "LA DOLCE",
+          "desc": "Süße Pizzen als Dessert",
+          "items": [
+            { "name": "Nutella Pizza", "desc": "Karamellisierter Pizzaboden mit Nutella — ein Highlight!", "price_slice": 3, "price_30": 10, "price_45": 15, "badge": "Fan-Favorit" }
+          ]
+        },
+        {
+          "name": "STREET FOOD",
+          "desc": "Nur am Hauptbahnhof — typisches neapolitanisches Streetfood",
+          "items": [
+            { "name": "Pizza Fritta", "desc": "Traditionell frittierte Pizza — so gibt es sie sonst nirgends", "price_slice": 4 },
+            { "name": "Arancini", "desc": "Frittierte Reisbälle — hausgemacht", "price_slice": 3 },
+            { "name": "Pasta Fritta", "desc": "Frittierte Spaghetti mit Besciamella, Erbsen und gemischtem Hackfleisch", "price_slice": 3.5 },
+            { "name": "Pistazien Tiramisu", "desc": "Hausgemachtes Tiramisu mit Pistazien", "price_slice": 4.5, "badge": "Hausgemacht" }
+          ]
+        }
+      ]
+    },
+    "delivery": [
+      { "name": "Lieferando", "url": "https://www.lieferando.de/speisekarte/napoli-slice-20-munchen-zentrum", "logo": "lieferando" },
+      { "name": "Wolt", "url": "https://wolt.com/de/deu/munich/restaurant/napoli-slice-bahnhofpl", "logo": "wolt" },
+      { "name": "Uber Eats", "url": "https://www.ubereats.com/de/store/napoli-slice-20-hauptbahnhof/PBezWlCKXmmkZoCaam8KTg", "logo": "ubereats" }
+    ],
+    "reviews": [
+      {
+        "name": "Marco P.",
+        "rating": 5,
+        "text": "Hier wird nicht einfach irgendeine Pizza gebacken – hier entsteht echte Handwerkskunst, wie man sie sonst nur in Neapel findet. Der Teig ist perfekt: luftig, leicht, mit genau dem richtigen Biss.",
+        "date": "vor 3 Monaten"
+      },
+      {
+        "name": "Sarah K.",
+        "rating": 5,
+        "text": "Die Zutaten sind hochwertig, frisch und authentisch italienisch – von der Tomatensauce bis zur Fior di Latte. Wer einmal hier war, kommt wieder.",
+        "date": "vor 1 Monat"
+      },
+      {
+        "name": "Thomas M.",
+        "rating": 5,
+        "text": "Ideal für einen schnellen Snack zwischendurch oder einen gemütlichen Abend mit richtig guter Pizza. Der Pizza Fritta ist ein absolutes Muss!",
+        "date": "vor 2 Wochen"
+      }
+    ],
+    "features": [
+      "Einzelne Stücke ab 2 €",
+      "Ganze Pizza Ø 30 cm & 45 cm",
+      "Pizza Fritta & Arancini (exklusiv HBF)",
+      "Hausgemachtes Pistazien Tiramisu",
+      "Lieferung täglich bis 03:00 Uhr",
+      "Pickup & Dine-in"
+    ],
+    "coords": {
+      "lat": 48.13985,
+      "lng": 11.55912
+    },
+    "legal": {
+      "imprintUrl": "impressum.html",
+      "privacyUrl": "datenschutz.html",
+      "cookieNotice": "Diese Website nutzt technisch notwendige Speicherung, um die Cookie-Entscheidung zu merken, und bindet externe Dienste wie Google Maps ein."
+    }
+  }
+}
