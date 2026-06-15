@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Napoli Slice 2.0 — Echte neapolitanische Pizza am Münchner Hauptbahnhof</title>
+  <meta name="description" content="Napoli Slice 2.0 am Münchner Hauptbahnhof: authentische neapolitanische Pizza, einzelne Slices ab 2€, Pizza Fritta, Arancini & Lieferung bis 03:00 Uhr. Schützenstraße 10, 80335 München." />
+  <meta name="keywords" content="Napoli Slice, Pizza München, neapolitanische Pizza, Hauptbahnhof München, Pizza Slice, Pizza Fritta, Lieferung München" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Napoli Slice 2.0 — Neapolitanische Pizza am HBF München" />
+  <meta property="og:description" content="Echte neapolitanische Pizza am Herzen Münchens. Einzelne Slices ab 2€, Lieferung bis 03:00 Uhr." />
+  <meta property="og:type" content="restaurant" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Napoli Slice 2.0",
+    "description": "Echte neapolitanische Pizza am Münchner Hauptbahnhof",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Schützenstraße 10",
+      "addressLocality": "München",
+      "postalCode": "80335",
+      "addressCountry": "DE"
+    },
+    "servesCuisine": "Neapolitanische Pizza",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "222"
+    },
+    "sameAs": ["https://www.instagram.com/napoli_slice/"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════ -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">
+    <span class="logo-emoji">🍕</span>
+    <span class="logo-text">Napoli <span>Slice</span> 2.0</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Story</a></li>
+    <li><a href="#menu">Speisekarte</a></li>
+    <li><a href="#reviews">Bewertungen</a></li>
+    <li><a href="#find-us">Anfahrt</a></li>
+    <li><a href="#delivery" class="nav-cta">Bestellen</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" class="mobile-link">Story</a>
+  <a href="#menu" class="mobile-link">Speisekarte</a>
+  <a href="#reviews" class="mobile-link">Bewertungen</a>
+  <a href="#find-us" class="mobile-link">Anfahrt</a>
+  <a href="#delivery" class="mobile-link" style="color:var(--red-light)">Bestellen</a>
+</div>
+
+<!-- ══ HERO ════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      Direkt am Münchner Hauptbahnhof · Schützenstraße 10
+    </div>
+    <h1>
+      Pizza wie in<br>
+      <em>Neapel.</em><br>
+      Mitten in München.
+    </h1>
+    <p class="hero-sub">
+      Luftiger Teig, Fior di Latte DOP, San Marzano Tomaten — 
+      einzelne Slices ab 2 €, ganze Pizzen bis Ø 45 cm, 
+      und Lieferung täglich bis 03:00 Uhr.
+    </p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">🍕 Zur Speisekarte</a>
+      <a href="#delivery" class="btn btn-outline">Jetzt bestellen</a>
+    </div>
+    <div class="hero-rating">
+      <div class="stars">★★★★★</div>
+      <p class="rating-text">
+        <strong>4.7 / 5</strong> · 222+ Bewertungen auf Google
+      </p>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ═══════════════════════════════════════ -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Neapolitanische Pizza</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Slice ab 2 €</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Fior di Latte DOP</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Pizza Fritta</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Lieferung bis 03:00 Uhr</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Pistazien Tiramisu</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Wöchentliche Spezialpizza</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">San Marzano Tomaten</span><span class="marquee-dot">✦</span>
+    <!-- dupliziert für nahtloses Loop -->
+    <span class="marquee-item">Neapolitanische Pizza</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Slice ab 2 €</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Fior di Latte DOP</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Pizza Fritta</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Lieferung bis 03:00 Uhr</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Pistazien Tiramisu</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Wöchentliche Spezialpizza</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">San Marzano Tomaten</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══════════════════════════════════════════ -->
+<section class="section-about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="about-eyebrow">Unsere Geschichte</p>
+        <h2>Aus <em>Neapel</em> in die Welt — und jetzt direkt am Gleis</h2>
+        <p>
+          Napoli Slice wurde von Adriana Lo Schiavo gegründet — einer echten Neapolitanerin, 
+          die weiß, worauf es bei Pizza wirklich ankommt. Seit dem Frühjahr 2024 begeistert 
+          ihre erste Filiale in der Maxvorstadt die Münchner.
+        </p>
+        <p>
+          Im Dezember 2024 folgte Napoli Slice 2.0 — direkt am Münchner Hauptbahnhof, 
+          neben dem 25hours Hotel The Royal Bavarian. Hier, wo täglich Tausende durch 
+          die Stadt strömen, gibt es jetzt endlich Pizza wie an der Via Toledo in Neapel: 
+          luftig, leicht, unwiderstehlich.
+        </p>
+        <p>
+          Unser Pizzaiolo Kerim — ausgezeichnet als bester junger Pizzaiolo der Pizza 
+          Europa League in Nürnberg — bringt jede Woche eine neue Spezialpizza auf die Karte. 
+          Trüffel, verrückte Dips, und immer auch Vegetarisches.
+        </p>
+      </div>
+      <div class="about-image-wrap reveal reveal-delay-2">
+        <img 
+          src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=800&q=85&auto=format&fit=crop"
+          alt="Frische neapolitanische Pizza aus dem Holzofen"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          ★ 4.7
+          <small>222+ Google Reviews</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ═══════════════════════════════════════ -->
+<div class="features-strip">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item reveal">
+        <span class="feature-icon">🍕</span>
+        <h3>Echte Handwerkskunst</h3>
+        <p>Teig nach neapolitanischer Tradition — luftig, mit dem perfekten Biss und dickem Rand.</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-1">
+        <span class="feature-icon">⚡</span>
+        <h3>Slice auf die Hand</h3>
+        <p>Einzelne Stücke ab 2 € — perfekt für zwischendurch direkt am Hauptbahnhof.</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-2">
+        <span class="feature-icon">🌙</span>
+        <h3>Bis tief in die Nacht</h3>
+        <p>Lieferung täglich bis 03:00 Uhr über Lieferando, Wolt und Uber Eats.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MENU ═══════════════════════════════════════════ -->
+<section class="section-menu" id="menu">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Die Speisekarte</span>
+      <h2>Authentisch. Frisch. <em>Unwiderstehlich.</em></h2>
+      <p>Hochwertige Zutaten, DOP-zertifiziert — wie in der besten Pizzeria Neapels.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-tab="classiche">🍅 Le Classiche</button>
+      <button class="menu-tab" data-tab="bianche">⬜ Le Bianche</button>
+      <button class="menu-tab" data-tab="dolce">🍫 La Dolce</button>
+      <button class="menu-tab" data-tab="street">🔥 Street Food</button>
+    </div>
+
+    <!-- LE CLASSICHE -->
+    <div class="menu-panel active" id="tab-classiche">
+      <p class="menu-category-label">Le Classiche</p>
+      <p class="menu-category-desc">Die Klassiker — bewährte Qualität mit den besten Zutaten</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <span class="menu-card-badge">Bestseller</span>
+          <h4>Margherita</h4>
+          <p>Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Basilikum, Olivenöl</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 2 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">9 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">14 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>Diavola</h4>
+          <p>Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Salame Napoli pikant, Basilikum, Olivenöl</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 3,50 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">12 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">17 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>Prosciutto e Funghi</h4>
+          <p>Pomodoro San Marzano, Mozzarella Fior di Latte DOP, premium Kochschinken, Champignons, Basilikum</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 3,50 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">12 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">17 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>BBQ Manzo</h4>
+          <p>Pomodoro San Marzano, Mozzarella Fior di Latte DOP, Rindersalami, BBQ-Soße, Röstzwiebeln</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 3,50 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">13 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">18 €</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LE BIANCHE -->
+    <div class="menu-panel" id="tab-bianche">
+      <p class="menu-category-label">Le Bianche</p>
+      <p class="menu-category-desc">Weiße Pizzen ohne Tomatensauce — intensiver Geschmack pur</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h4>Quattro Formaggi</h4>
+          <p>Mozzarella Fior di Latte DOP, Gorgonzola piccante, Ricotta, Parmigiano Reggiano, Olivenöl, Basilikum</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 4 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">13 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">19 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>Salsiccia e Friarielli</h4>
+          <p>Mozzarella Fior di Latte DOP, Salsiccia Toscana vom Schwein, Friarielli, Olivenöl</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 4 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">13 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">19 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <span class="menu-card-badge">🌶 Scharf</span>
+          <h4>Spicy Love</h4>
+          <p>Mozzarella Fior di Latte DOP, scharfer Salame Napoli, Spicy Love Soße, Basilikum, Olivenöl</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 4 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">13 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">19 €</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LA DOLCE -->
+    <div class="menu-panel" id="tab-dolce">
+      <p class="menu-category-label">La Dolce</p>
+      <p class="menu-category-desc">Süße Pizzen als Dessert — für alle, die noch ein bisschen mehr wollen</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <span class="menu-card-badge">Fan-Favorit</span>
+          <h4>Nutella Pizza</h4>
+          <p>Karamellisierter Pizzaboden mit braunem Zucker und Nutella — eines unserer absoluten Highlights.</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Slice</span><span class="amount">ab 3 €</span></span>
+            <span class="price-tag"><span class="label">Ø 30 cm</span><span class="amount">10 €</span></span>
+            <span class="price-tag"><span class="label">Ø 45 cm</span><span class="amount">15 €</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STREET FOOD -->
+    <div class="menu-panel" id="tab-street">
+      <p class="menu-category-label">Street Food — exklusiv am Hauptbahnhof</p>
+      <p class="menu-category-desc">Typisches neapolitanisches Streetfood — so gibt es es sonst nirgendwo in München</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h4>Pizza Fritta</h4>
+          <p>Traditionell frittierte Pizza — ein neapolitanisches Original, das am HBF-Standort exklusiv erhältlich ist.</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Stück</span><span class="amount">ab 4 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>Arancini</h4>
+          <p>Frittierte Reisbälle nach sizilianischer Art — hausgemacht und goldbraun.</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Stück</span><span class="amount">ab 3 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <h4>Pasta Fritta</h4>
+          <p>Frittierte Spaghetti mit Besciamella, Erbsen und gemischtem Hackfleisch — neapolitanisches Streetfood at its best.</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Portion</span><span class="amount">ab 3,50 €</span></span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <span class="menu-card-badge">Hausgemacht</span>
+          <h4>Pistazien Tiramisu</h4>
+          <p>Hausgemachtes Tiramisu mit Pistazien — der perfekte Abschluss. Nur am HBF-Standort erhältlich.</p>
+          <div class="menu-card-prices">
+            <span class="price-tag"><span class="label">Portion</span><span class="amount">ab 4,50 €</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Special -->
+    <div style="margin-top:40px; background: rgba(201,145,58,0.08); border: 1px solid rgba(201,145,58,0.25); border-radius:12px; padding: 28px 32px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;" class="reveal">
+      <span style="font-size:2.5rem; flex-shrink:0;">✨</span>
+      <div>
+        <p style="font-family:var(--font-ui); font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; font-weight:600;">Jede Woche neu</p>
+        <h3 style="font-family:var(--font-display); font-size:1.2rem; color:var(--white); margin-bottom:6px;">Die Spezialpizza der Woche</h3>
+        <p style="font-size:0.85rem; color:rgba(245,239,224,0.7);">Unser Pizzaiolo Kerim — ausgezeichneter junger Pizzaiolo der Pizza Europa League — kreiert jede Woche eine neue Spezialpizza. Trüffel, Herbst-Kollektionen, Vegetarisches und mehr. Folg uns auf Instagram für aktuelle Updates.</p>
+      </div>
+      <a href="https://www.instagram.com/napoli_slice/" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left:auto; white-space:nowrap; flex-shrink:0;">📸 @napoli_slice</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SIZES ══════════════════════════════════════════ -->
+<section class="section-sizes">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Größen & Formate</span>
+      <h2>Für jeden <em>Hunger.</em></h2>
+    </div>
+    <div class="sizes-grid">
+      <div class="size-card reveal">
+        <span class="size-icon">🍕</span>
+        <h3>Pizza al Taglio</h3>
+        <p class="price-from">ab 2 €</p>
+        <p>Der schnelle Genuss auf die Hand — perfekt für den Weg oder einen kleinen Hunger zwischendurch am Hauptbahnhof.</p>
+      </div>
+      <div class="size-card featured reveal reveal-delay-1">
+        <span class="size-popular">Beliebt</span>
+        <span class="size-icon">🍕🍕</span>
+        <h3>Pizza Ø 30 cm</h3>
+        <p class="price-from">ab 9 €</p>
+        <p>Die klassische Größe für einen oder zwei Personen — zum Essen vor Ort oder zum Mitnehmen.</p>
+      </div>
+      <div class="size-card reveal reveal-delay-2">
+        <span class="size-icon">🍕🍕🍕</span>
+        <h3>Pizza Ø 45 cm</h3>
+        <p class="price-from">ab 14 €</p>
+        <p>Die XL-Pizza für Gruppen — genug für 3–4 Personen. Auch für Lieferung über Lieferando, Wolt und Uber Eats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ════════════════════════════════════════ -->
+<section class="section-reviews" id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Was unsere Gäste sagen</span>
+      <h2>4.7 von 5 — <em>über 222 Bewertungen</em></h2>
+    </div>
+
+    <!-- Rating Summary -->
+    <div class="rating-summary reveal">
+      <div class="rating-big">4.7</div>
+      <div class="rating-details">
+        <div class="stars-row">★★★★★</div>
+        <p>Basierend auf 222+ Google-Bewertungen<br>„Echte Handwerkskunst, wie man sie sonst nur in Neapel findet."</p>
+      </div>
+      <div class="rating-source-logo">
+        <a href="https://www.google.com/maps/search/Napoli+Slice+München+Schützenstraße" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.8rem;">Alle Reviews auf Google →</a>
+      </div>
+    </div>
+
+    <!-- Embedded Google Review Widget via Place ID -->
+    <div style="margin-bottom:32px; border-radius:12px; overflow:hidden; border:1px solid rgba(245,239,224,0.08);">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.1723445817847!2d11.556931315893478!3d48.13981097922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75ee11a4e05b%3A0x7e3c9b2f5a1e8d4a!2sNapoli%20Slice!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
+        width="100%"
+        height="120"
+        style="border:0; display:block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Napoli Slice auf Google Maps"
+      ></iframe>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          „Hier wird nicht einfach irgendeine Pizza gebacken – hier entsteht echte Handwerkskunst, 
+          wie man sie sonst nur in Neapel findet. Der Teig ist perfekt: luftig, leicht, 
+          mit genau dem richtigen Biss."
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div>
+            <div class="review-name">Marco P.</div>
+            <div class="review-date">vor 3 Monaten · Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          „Die Zutaten sind hochwertig, frisch und authentisch italienisch – von der Tomatensauce 
+          bis zur Fior di Latte. Wer einmal hier war, kommt wieder. Und wer Pizza wirklich liebt, 
+          wird Napoli Slice auf seine persönliche Bestenliste setzen."
+        </p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:var(--gold);">S</div>
+          <div>
+            <div class="review-name">Sarah K.</div>
+            <div class="review-date">vor 1 Monat · Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          „Ideal für einen schnellen Snack zwischendurch oder einen gemütlichen Abend 
+          mit richtig guter Pizza. Der Pizza Fritta ist ein absolutes Muss! 
+          Toller Service, faire Preise."
+        </p>
+        <div class="review-author">
+          <div class="review-avatar" style="background:#1C6E4A;">T</div>
+          <div>
+            <div class="review-name">Thomas M.</div>
+            <div class="review-date">vor 2 Wochen · Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DELIVERY ═══════════════════════════════════════ -->
+<section class="section-delivery" id="delivery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Lieferung</span>
+      <h2>Täglich bis <em>03:00 Uhr.</em></h2>
+      <p>Bestell direkt über deine Lieblingsplattform — Lieferung an deine Adresse oder Pickup vor Ort.</p>
+    </div>
+    <div class="delivery-grid">
+      <a href="https://www.lieferando.de/speisekarte/napoli-slice-20-munchen-zentrum" target="_blank" rel="noopener" class="delivery-card reveal">
+        <div class="d-logo">🛵</div>
+        <h3>Lieferando</h3>
+        <p>Bis zu 30% Rabatt & 2-für-1 Aktionen auf ausgewählte Produkte</p>
+        <span class="d-cta">Jetzt bestellen →</span>
+      </a>
+      <a href="https://wolt.com/de/deu/munich/restaurant/napoli-slice-bahnhofpl" target="_blank" rel="noopener" class="delivery-card reveal reveal-delay-1">
+        <div class="d-logo">🔵</div>
+        <h3>Wolt</h3>
+        <p>„2 hinzufügen, 1 bezahlen" Aktion & 10% Rabatt mit Code SPAR30</p>
+        <span class="d-cta">Jetzt bestellen →</span>
+      </a>
+      <a href="https://www.ubereats.com/de/store/napoli-slice-20-hauptbahnhof/PBezWlCKXmmkZoCaam8KTg" target="_blank" rel="noopener" class="delivery-card reveal reveal-delay-2">
+        <div class="d-logo">🟢</div>
+        <h3>Uber Eats</h3>
+        <p>2-für-1 Aktionen auf ausgewählte Speisen direkt in der App</p>
+        <span class="d-cta">Jetzt bestellen →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL / INSTAGRAM ════════════════════════════ -->
+<section class="section-social" id="social">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Folg uns</span>
+      <h2>Pizza-Inspiration <em>täglich.</em></h2>
+      <p>Spezialpizzas der Woche, Behind-the-Scenes und Aktionen — alles auf Instagram.</p>
+    </div>
+    <div class="instagram-widget reveal">
+      <a href="https://www.instagram.com/napoli_slice/" target="_blank" rel="noopener" class="instagram-handle">
+        <div class="ig-icon">📸</div>
+        @napoli_slice
+      </a>
+      <div class="insta-feed-placeholder">
+        <div class="insta-cell" style="background-image:url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80&auto=format&fit=crop');"></div>
+        <div class="insta-cell" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80&auto=format&fit=crop');"></div>
+        <div class="insta-cell" style="background-image:url('https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=80&auto=format&fit=crop');"></div>
+        <div class="insta-cell" style="background-image:url('https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=80&auto=format&fit=crop');"></div>
+      </div>
+      <div class="ig-stats">
+        <div class="ig-stat">
+          <span class="val">5.162</span>
+          <span class="lbl">Followers</span>
+        </div>
+        <div class="ig-stat">
+          <span class="val">115+</span>
+          <span class="lbl">Posts</span>
+        </div>
+        <div class="ig-stat">
+          <span class="val">Wöchentlich</span>
+          <span class="lbl">Neue Spezialpizza</span>
+        </div>
+      </div>
+      <div style="margin-top:28px;">
+        <a href="https://www.instagram.com/napoli_slice/" target="_blank" rel="noopener" class="btn btn-outline">Auf Instagram folgen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAP & HOURS ════════════════════════════════════ -->
+<section class="section-find-us" id="find-us">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Besucht uns</span>
+      <h2>Direkt am <em>Hauptbahnhof.</em></h2>
+    </div>
+    <div class="find-us-grid">
+      <div>
+        <div class="hours-card reveal">
+          <h3>🕐 Öffnungszeiten</h3>
+          <div class="hours-table">
+            <div class="hours-row"><span class="hours-day">Montag</span><span class="hours-time">11:00 – 23:00</span></div>
+            <div class="hours-row"><span class="hours-day">Dienstag</span><span class="hours-time">11:00 – 23:00</span></div>
+            <div class="hours-row"><span class="hours-day">Mittwoch</span><span class="hours-time">11:00 – 23:00</span></div>
+            <div class="hours-row"><span class="hours-day">Donnerstag</span><span class="hours-time">11:00 – 23:00</span></div>
+            <div class="hours-row"><span class="hours-day">Freitag</span><span class="hours-time today">11:00 – 23:30 ✦</span></div>
+            <div class="hours-row"><span class="hours-day">Samstag</span><span class="hours-time today">11:00 – 23:30 ✦</span></div>
+            <div class="hours-row"><span class="hours-day">Sonntag</span><span class="hours-time">11:00 – 23:00</span></div>
+          </div>
+        </div>
+        <div class="address-card reveal reveal-delay-1">
+          <div class="address-line">
+            <span class="address-icon">📍</span>
+            <div class="address-text">
+              <strong>Schützenstraße 10</strong>
+              80335 München · am Hauptbahnhof<br>
+              neben dem 25hours Hotel The Royal Bavarian
+            </div>
+          </div>
+          <div class="address-line">
+            <span class="address-icon">🚇</span>
+            <div class="address-text">U-Bahn: Hauptbahnhof (U1–U8)<br>S-Bahn: München Hbf (alle Linien)</div>
+          </div>
+          <div class="address-line">
+            <span class="address-icon">📸</span>
+            <div class="address-text">
+              Instagram: <a href="https://www.instagram.com/napoli_slice/" target="_blank" rel="noopener" style="color:var(--gold); text-decoration:none;">@napoli_slice</a>
+            </div>
+          </div>
+        </div>
+        <div class="delivery-note reveal reveal-delay-2">
+          🌙 <strong>Lieferung täglich bis 03:00 Uhr</strong> — über Lieferando, Wolt & Uber Eats
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container reveal reveal-delay-1">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.1723445817847!2d11.554543715893406!3d48.13981097922086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75ee11a4e05b%3A0x7e3c9b2f5a1e8d4a!2sSchützenstraße%2010%2C%2080335%20München!5e0!3m2!1sde!2sde!4v1700000000001!5m2!1sde!2sde"
+          title="Napoli Slice 2.0 – Schützenstraße 10, 80335 München"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">🍕 Napoli <span>Slice</span> 2.0</a>
+        <p>Echte neapolitanische Pizza am Münchner Hauptbahnhof. Seit Dezember 2024 bringen wir den Geschmack Neapels direkt zu euch — authentisch, frisch und unwiderstehlich.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">Unsere Story</a></li>
+          <li><a href="#menu">Speisekarte</a></li>
+          <li><a href="#reviews">Bewertungen</a></li>
+          <li><a href="#delivery">Bestellen</a></li>
+          <li><a href="#find-us">Anfahrt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Schützenstraße 10<br>80335 München</li>
+          <li>Mo–Do & So: 11–23 Uhr</li>
+          <li>Fr–Sa: 11–23:30 Uhr</li>
+          <li>Lieferung bis 03:00 Uhr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Napoli Slice · Inhaberin: Adriana Lo Schiavo · Alle Preise inkl. MwSt.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/napoli_slice/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+        <a href="https://www.lieferando.de/speisekarte/napoli-slice-20-munchen-zentrum" target="_blank" rel="noopener" aria-label="Lieferando">🛵</a>
+        <a href="https://wolt.com/de/deu/munich/restaurant/napoli-slice-bahnhofpl" target="_blank" rel="noopener" aria-label="Wolt">🔵</a>
+        <a href="https://www.ubereats.com/de/store/napoli-slice-20-hauptbahnhof/PBezWlCKXmmkZoCaam8KTg" target="_blank" rel="noopener" aria-label="Uber Eats">🟢</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ JAVASCRIPT ══════════════════════════════════════ -->
+<script>
+// ── Nav scroll ──────────────────────────────────────────
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+// ── Hamburger ───────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+// ── Menu Tabs ───────────────────────────────────────────
+const tabs = document.querySelectorAll('.menu-tab');
+const panels = document.querySelectorAll('.menu-panel');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    panels.forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    const panelId = 'tab-' + tab.dataset.tab;
+    document.getElementById(panelId).classList.add('active');
+  });
+});
+
+// ── Scroll Reveal ───────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── Highlight today's hours ─────────────────────────────
+const days = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const today = days[new Date().getDay()];
+document.querySelectorAll('.hours-row').forEach(row => {
+  const dayEl = row.querySelector('.hours-day');
+  if (dayEl && dayEl.textContent.trim() === today) {
+    dayEl.style.color = 'var(--gold)';
+    dayEl.style.fontWeight = '600';
+  }
+});
+</script>
+</body>
+</html>
